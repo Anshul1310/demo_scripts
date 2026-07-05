@@ -50,23 +50,28 @@ VITE_ORDER_SERVICE_URL=${params.VITE_ORDER_SERVICE_URL}
 
         stage('Update K8s Manifests') {
             steps {
-                sh "sed -i 's|image: ${DOCKER_REGISTRY}/frontend:.*|image: ${DOCKER_REGISTRY}/frontend:${IMAGE_TAG}|' k8s-manifests/frontend/deployment.yaml"
-                sh "sed -i 's|image: ${DOCKER_REGISTRY}/user-service:.*|image: ${DOCKER_REGISTRY}/user-service:${IMAGE_TAG}|' k8s-manifests/user/deployment.yaml"
-                sh "sed -i 's|image: ${DOCKER_REGISTRY}/order-service:.*|image: ${DOCKER_REGISTRY}/order-service:${IMAGE_TAG}|' k8s-manifests/order/deployment.yaml"
+                withCredentials([usernamePassword(credentialsId: 'github-creds', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_TOKEN')]) {
+                    sh '''
+                        rm -rf demo_scripts
+                        git clone https://${GIT_USER}:${GIT_TOKEN}@github.com/Anshul1310/demo_scripts.git
+                    '''
+                }
+                sh "sed -i 's|image: ${DOCKER_REGISTRY}/frontend:.*|image: ${DOCKER_REGISTRY}/frontend:${IMAGE_TAG}|' demo_scripts/frontend/deployment.yaml"
+                sh "sed -i 's|image: ${DOCKER_REGISTRY}/user-service:.*|image: ${DOCKER_REGISTRY}/user-service:${IMAGE_TAG}|' demo_scripts/user/deployment.yaml"
+                sh "sed -i 's|image: ${DOCKER_REGISTRY}/order-service:.*|image: ${DOCKER_REGISTRY}/order-service:${IMAGE_TAG}|' demo_scripts/order/deployment.yaml"
             }
         }
 
         stage('Push Manifest Changes') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'github-creds', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_TOKEN')]) {
-                    sh '''
-                        git config user.email "negi.anshulnegi17@gmail.com"
-                        git config user.name "Anshul Negi"
-                        git add k8s-manifests/
-                        git commit -m "ci: update image tags to build ${IMAGE_TAG}" || echo "No changes to commit"
-                        git push https://${GIT_USER}:${GIT_TOKEN}@github.com/Anshul1310/nittfest-webops-task2.git HEAD:${GIT_BRANCH}
-                    '''
-                }
+                sh '''
+                    cd demo_scripts
+                    git config user.email "negi.anshulnegi17@gmail.com"
+                    git config user.name "Anshul Negi"
+                    git add .
+                    git commit -m "ci: update image tags to build ${IMAGE_TAG}" || echo "No changes to commit"
+                    git push origin main
+                '''
             }
         }
     }

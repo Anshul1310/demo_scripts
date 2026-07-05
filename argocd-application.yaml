@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Anshul1310/nittfest-webops-task2
+    repoURL: https://github.com/Anshul1310/demo_scripts
     targetRevision: main
-    path: k8s-manifests
+    path: .
     directory:
       recurse: true
   destination:
