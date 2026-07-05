@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: anshul8394/user-service:1
+          image: anshul8394/user-service:173
           ports:
             - containerPort: 8081
