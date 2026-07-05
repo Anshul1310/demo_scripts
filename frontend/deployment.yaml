@@ -6,7 +6,7 @@ metadata:
   labels:
     app: frontend
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: frontend
@@ -19,7 +19,4 @@ spec:
         - name: frontend
           image: anshul8394/frontend:1
           ports:
-            - containerPort: 5173
-          envFrom:
-            - configMapRef:
-                name: nfconfigmap
+            - containerPort: 80
