@@ -9,8 +9,6 @@ spec:
     repoURL: https://github.com/Anshul1310/demo_scripts
     targetRevision: main
     path: .
-    directory:
-      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: nittfest
