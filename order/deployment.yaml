@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: anshul8394/order-service:175
+          image: anshul8394/order-service:176
           ports:
             - containerPort: 8082
           envFrom:
