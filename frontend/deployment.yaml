@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: anshul8394/frontend:174
+          image: anshul8394/frontend:175
           ports:
             - containerPort: 80
