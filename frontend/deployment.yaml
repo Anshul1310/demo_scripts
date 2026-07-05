@@ -19,4 +19,7 @@ spec:
         - name: frontend
           image: anshul8394/frontend:1
           ports:
-            - containerPort: 4173
+            - containerPort: 5173
+          envFrom:
+            - configMapRef:
+                name: nfconfigmap

@@ -11,6 +11,6 @@ spec:
   selector:
     app: frontend
   ports:
-    - name: http
-      port: 80
-      targetPort: 4173
+     - name: http
+       port: 80
+       targetPort: 5173
