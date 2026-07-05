@@ -1,31 +1,15 @@
 pipeline {
     agent any
 
-    parameters {
-        string(name: 'VITE_USER_SERVICE_URL', defaultValue: 'http://nittfest.example.com/api/users', description: 'Frontend API URL for user service')
-        string(name: 'VITE_ORDER_SERVICE_URL', defaultValue: 'http://nittfest.example.com/api/orders', description: 'Frontend API URL for order service')
-    }
-
     environment {
         DOCKER_REGISTRY = 'anshul8394'
         IMAGE_TAG = "${BUILD_NUMBER}"
-        GIT_REPO = 'https://github.com/Anshul1310/nittfest-webops-task2.git'
-        GIT_BRANCH = 'main'
     }
 
     stages {
         stage('Checkout') {
             steps {
                 checkout scm
-            }
-        }
-
-        stage('Create Frontend Env') {
-            steps {
-                writeFile file: 'frontend/.env', text: """\
-VITE_USER_SERVICE_URL=${params.VITE_USER_SERVICE_URL}
-VITE_ORDER_SERVICE_URL=${params.VITE_ORDER_SERVICE_URL}
-"""
             }
         }
 

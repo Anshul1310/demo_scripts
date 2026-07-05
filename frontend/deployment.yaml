@@ -19,4 +19,4 @@ spec:
         - name: frontend
           image: anshul8394/frontend:1
           ports:
-            - containerPort: 80
+            - containerPort: 4173
