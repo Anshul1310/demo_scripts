@@ -2,15 +2,13 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'VITE_USER_SERVICE_URL', defaultValue: 'http://benchbae.in/api/users', description: 'Frontend API URL for user service')
-        string(name: 'VITE_ORDER_SERVICE_URL', defaultValue: 'http://benchbae.in/api/orders', description: 'Frontend API URL for order service')
+        string(name: 'VITE_USER_SERVICE_URL', defaultValue: '/api/users', description: 'Frontend API URL for user service')
+        string(name: 'VITE_ORDER_SERVICE_URL', defaultValue: '/api/orders', description: 'Frontend API URL for order service')
     }
 
     environment {
         DOCKER_REGISTRY = 'anshul8394'
         IMAGE_TAG = "${BUILD_NUMBER}"
-        GIT_REPO = 'https://github.com/Anshul1310/nittfest-webops-task2.git'
-        GIT_BRANCH = 'main'
     }
 
     stages {
