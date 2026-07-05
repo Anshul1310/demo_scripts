@@ -1,24 +1,22 @@
-kind: Deployment
 apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: nf-deployemnt
+  name: user-deployment
   namespace: nittfest
-  labels: 
-    app: nittfest
-specs:
+  labels:
+    app: user-service
+spec:
   replicas: 3
-  selectors:
+  selector:
     matchLabels:
-      app: nginx
-
+      app: user-service
   template:
     metadata:
       labels:
-        app: nittfest
+        app: user-service
     spec:
       containers:
-        - name: frontend
-          image: anshul8394/frontend:1
+        - name: user-service
+          image: anshul8394/user-service:1
           ports:
-            containerPort: 80
-
+            - containerPort: 8081

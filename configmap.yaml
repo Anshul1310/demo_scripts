@@ -1,9 +1,9 @@
-kind: ConfigMap
 apiVersion: v1
+kind: ConfigMap
 metadata:
   name: nfconfigmap
+  namespace: nittfest
 data:
   USER_SERVICE_URL: "http://user-service:8081"
-  VITE_USER_SERVICE_URL: "http://13.126.215.91:30316"
-  VITE_ORDER_SERVICE_URL: "http://13.126.215.91:30316"
-
+  VITE_USER_SERVICE_URL: "http://nittfest.example.com/api/users"
+  VITE_ORDER_SERVICE_URL: "http://nittfest.example.com/api/orders"

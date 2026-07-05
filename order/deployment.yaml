@@ -1,24 +1,25 @@
-kind: Deployment
 apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: nf-deployemnt
+  name: order-deployment
   namespace: nittfest
-  labels: 
-    app: nittfest
-specs:
+  labels:
+    app: order-service
+spec:
   replicas: 3
-  selectors:
+  selector:
     matchLabels:
-      app: nginx
-
+      app: order-service
   template:
     metadata:
       labels:
-        app: nittfest
+        app: order-service
     spec:
       containers:
-        - name: frontend
-          image: anshul8394/frontend:1
+        - name: order-service
+          image: anshul8394/order-service:1
           ports:
-            containerPort: 80
-
+            - containerPort: 8082
+          envFrom:
+            - configMapRef:
+                name: nfconfigmap
