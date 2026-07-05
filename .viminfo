@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1783224356,,"wq!"
+|2,0,1783226095,,"wq!"
 :wq
 |2,0,1783219395,,"wq"
 
@@ -27,36 +27,48 @@
 # Registers:
 
 # File marks:
-'0  20  21  ~/frontend/deployment.yaml
-|4,48,20,21,1783224983,"~/frontend/deployment.yaml"
-'1  1  13  ~/frontend/service.yaml
-|4,49,1,13,1783224356,"~/frontend/service.yaml"
-'2  18  0  ~/user/service.yaml
-|4,50,18,0,1783224289,"~/user/service.yaml"
-'3  15  0  ~/order/service.yaml
-|4,51,15,0,1783224254,"~/order/service.yaml"
-'4  1  199  ~/order/service.yaml
-|4,52,1,199,1783224208,"~/order/service.yaml"
-'5  12  20  ~/order/service.yaml
-|4,53,12,20,1783224208,"~/order/service.yaml"
-'6  20  21  ~/frontend/service.yaml
-|4,54,20,21,1783220545,"~/frontend/service.yaml"
-'7  1  0  ~/frontend/service.yaml
-|4,55,1,0,1783220545,"~/frontend/service.yaml"
-'8  5  21  ~/frontend/service.yaml
-|4,56,5,21,1783220545,"~/frontend/service.yaml"
-'9  6  44  ~/configmap.yaml
-|4,57,6,44,1783220338,"~/configmap.yaml"
+'0  3  4  ~/.gitignore
+|4,48,3,4,1783226095,"~/.gitignore"
+'1  20  21  ~/frontend/deployment.yaml
+|4,49,20,21,1783224983,"~/frontend/deployment.yaml"
+'2  1  13  ~/frontend/service.yaml
+|4,50,1,13,1783224356,"~/frontend/service.yaml"
+'3  18  0  ~/user/service.yaml
+|4,51,18,0,1783224289,"~/user/service.yaml"
+'4  15  0  ~/order/service.yaml
+|4,52,15,0,1783224254,"~/order/service.yaml"
+'5  1  199  ~/order/service.yaml
+|4,53,1,199,1783224208,"~/order/service.yaml"
+'6  12  20  ~/order/service.yaml
+|4,54,12,20,1783224208,"~/order/service.yaml"
+'7  20  21  ~/frontend/service.yaml
+|4,55,20,21,1783220545,"~/frontend/service.yaml"
+'8  1  0  ~/frontend/service.yaml
+|4,56,1,0,1783220545,"~/frontend/service.yaml"
+'9  5  21  ~/frontend/service.yaml
+|4,57,5,21,1783220545,"~/frontend/service.yaml"
 
 # Jumplist (newest first):
+-'  3  4  ~/.gitignore
+|4,39,3,4,1783226095,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1783226046,"~/.gitignore"
 -'  20  21  ~/frontend/deployment.yaml
 |4,39,20,21,1783224983,"~/frontend/deployment.yaml"
+-'  20  21  ~/frontend/deployment.yaml
+|4,39,20,21,1783224983,"~/frontend/deployment.yaml"
+-'  1  0  ~/frontend/deployment.yaml
+|4,39,1,0,1783224595,"~/frontend/deployment.yaml"
 -'  1  0  ~/frontend/deployment.yaml
 |4,39,1,0,1783224595,"~/frontend/deployment.yaml"
 -'  1  13  ~/frontend/service.yaml
 |4,39,1,13,1783224356,"~/frontend/service.yaml"
 -'  1  13  ~/frontend/service.yaml
 |4,39,1,13,1783224356,"~/frontend/service.yaml"
+-'  1  13  ~/frontend/service.yaml
+|4,39,1,13,1783224356,"~/frontend/service.yaml"
+-'  1  13  ~/frontend/service.yaml
+|4,39,1,13,1783224356,"~/frontend/service.yaml"
 -'  18  0  ~/user/service.yaml
 |4,39,18,0,1783224289,"~/user/service.yaml"
 -'  18  0  ~/user/service.yaml
@@ -65,6 +77,22 @@
 |4,39,18,0,1783224289,"~/user/service.yaml"
 -'  18  0  ~/user/service.yaml
 |4,39,18,0,1783224289,"~/user/service.yaml"
+-'  18  0  ~/user/service.yaml
+|4,39,18,0,1783224289,"~/user/service.yaml"
+-'  18  0  ~/user/service.yaml
+|4,39,18,0,1783224289,"~/user/service.yaml"
+-'  18  0  ~/user/service.yaml
+|4,39,18,0,1783224289,"~/user/service.yaml"
+-'  18  0  ~/user/service.yaml
+|4,39,18,0,1783224289,"~/user/service.yaml"
+-'  1  0  ~/user/service.yaml
+|4,39,1,0,1783224269,"~/user/service.yaml"
+-'  1  0  ~/user/service.yaml
+|4,39,1,0,1783224269,"~/user/service.yaml"
+-'  1  0  ~/user/service.yaml
+|4,39,1,0,1783224269,"~/user/service.yaml"
+-'  1  0  ~/user/service.yaml
+|4,39,1,0,1783224269,"~/user/service.yaml"
 -'  1  0  ~/user/service.yaml
 |4,39,1,0,1783224269,"~/user/service.yaml"
 -'  1  0  ~/user/service.yaml
@@ -89,6 +117,38 @@
 |4,39,15,0,1783224254,"~/order/service.yaml"
 -'  15  0  ~/order/service.yaml
 |4,39,15,0,1783224254,"~/order/service.yaml"
+-'  15  0  ~/order/service.yaml
+|4,39,15,0,1783224254,"~/order/service.yaml"
+-'  15  0  ~/order/service.yaml
+|4,39,15,0,1783224254,"~/order/service.yaml"
+-'  15  0  ~/order/service.yaml
+|4,39,15,0,1783224254,"~/order/service.yaml"
+-'  15  0  ~/order/service.yaml
+|4,39,15,0,1783224254,"~/order/service.yaml"
+-'  15  0  ~/order/service.yaml
+|4,39,15,0,1783224254,"~/order/service.yaml"
+-'  15  0  ~/order/service.yaml
+|4,39,15,0,1783224254,"~/order/service.yaml"
+-'  15  0  ~/order/service.yaml
+|4,39,15,0,1783224254,"~/order/service.yaml"
+-'  15  0  ~/order/service.yaml
+|4,39,15,0,1783224254,"~/order/service.yaml"
+-'  1  199  ~/order/service.yaml
+|4,39,1,199,1783224217,"~/order/service.yaml"
+-'  1  199  ~/order/service.yaml
+|4,39,1,199,1783224217,"~/order/service.yaml"
+-'  1  199  ~/order/service.yaml
+|4,39,1,199,1783224217,"~/order/service.yaml"
+-'  1  199  ~/order/service.yaml
+|4,39,1,199,1783224217,"~/order/service.yaml"
+-'  1  199  ~/order/service.yaml
+|4,39,1,199,1783224217,"~/order/service.yaml"
+-'  1  199  ~/order/service.yaml
+|4,39,1,199,1783224217,"~/order/service.yaml"
+-'  1  199  ~/order/service.yaml
+|4,39,1,199,1783224217,"~/order/service.yaml"
+-'  1  199  ~/order/service.yaml
+|4,39,1,199,1783224217,"~/order/service.yaml"
 -'  1  199  ~/order/service.yaml
 |4,39,1,199,1783224217,"~/order/service.yaml"
 -'  1  199  ~/order/service.yaml
@@ -121,6 +181,38 @@
 |4,39,12,20,1783224208,"~/order/service.yaml"
 -'  12  20  ~/order/service.yaml
 |4,39,12,20,1783224208,"~/order/service.yaml"
+-'  12  20  ~/order/service.yaml
+|4,39,12,20,1783224208,"~/order/service.yaml"
+-'  12  20  ~/order/service.yaml
+|4,39,12,20,1783224208,"~/order/service.yaml"
+-'  12  20  ~/order/service.yaml
+|4,39,12,20,1783224208,"~/order/service.yaml"
+-'  12  20  ~/order/service.yaml
+|4,39,12,20,1783224208,"~/order/service.yaml"
+-'  12  20  ~/order/service.yaml
+|4,39,12,20,1783224208,"~/order/service.yaml"
+-'  12  20  ~/order/service.yaml
+|4,39,12,20,1783224208,"~/order/service.yaml"
+-'  12  20  ~/order/service.yaml
+|4,39,12,20,1783224208,"~/order/service.yaml"
+-'  12  20  ~/order/service.yaml
+|4,39,12,20,1783224208,"~/order/service.yaml"
+-'  1  0  ~/order/service.yaml
+|4,39,1,0,1783224173,"~/order/service.yaml"
+-'  1  0  ~/order/service.yaml
+|4,39,1,0,1783224173,"~/order/service.yaml"
+-'  1  0  ~/order/service.yaml
+|4,39,1,0,1783224173,"~/order/service.yaml"
+-'  1  0  ~/order/service.yaml
+|4,39,1,0,1783224173,"~/order/service.yaml"
+-'  1  0  ~/order/service.yaml
+|4,39,1,0,1783224173,"~/order/service.yaml"
+-'  1  0  ~/order/service.yaml
+|4,39,1,0,1783224173,"~/order/service.yaml"
+-'  1  0  ~/order/service.yaml
+|4,39,1,0,1783224173,"~/order/service.yaml"
+-'  1  0  ~/order/service.yaml
+|4,39,1,0,1783224173,"~/order/service.yaml"
 -'  1  0  ~/order/service.yaml
 |4,39,1,0,1783224173,"~/order/service.yaml"
 -'  1  0  ~/order/service.yaml
@@ -157,100 +249,15 @@
 |4,39,5,21,1783220545,"~/frontend/service.yaml"
 -'  1  0  ~/frontend/service.yaml
 |4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  20  21  ~/frontend/service.yaml
-|4,39,20,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220545,"~/frontend/service.yaml"
--'  5  21  ~/frontend/service.yaml
-|4,39,5,21,1783220545,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  1  0  ~/frontend/service.yaml
-|4,39,1,0,1783220357,"~/frontend/service.yaml"
--'  6  44  ~/configmap.yaml
-|4,39,6,44,1783220338,"~/configmap.yaml"
--'  6  44  ~/configmap.yaml
-|4,39,6,44,1783220338,"~/configmap.yaml"
--'  6  44  ~/configmap.yaml
-|4,39,6,44,1783220338,"~/configmap.yaml"
--'  6  44  ~/configmap.yaml
-|4,39,6,44,1783220338,"~/configmap.yaml"
--'  6  44  ~/configmap.yaml
-|4,39,6,44,1783220338,"~/configmap.yaml"
--'  6  44  ~/configmap.yaml
-|4,39,6,44,1783220338,"~/configmap.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1783226091	0
+	"	3	4
+	^	3	5
+	.	3	4
+	+	3	4
 
 > ~/frontend/deployment.yaml
 	*	1783224642	0
